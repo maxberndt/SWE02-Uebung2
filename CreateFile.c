@@ -3,15 +3,12 @@
 #include <stdlib.h>
 #include <time.h>
 
-
-
 int main(int argc, const char * argv[]) {
     
     int number = 100;
     int range = 100;
     time_t t;
-    
-    
+
     for(int i=0; i < argc; i++) {
         
         //printf("%s\n",argv[i]); //Zum Testen
@@ -25,7 +22,7 @@ int main(int argc, const char * argv[]) {
         }
         
         if (strcmp(argv[i], "-h") == 0){
-            printf("Kurze Beschreibung");
+            printf("Beschreibung der Funktionen\n");
         }
         
     }
@@ -60,6 +57,7 @@ int main(int argc, const char * argv[]) {
     }else {
         for(int i=0; i<number; i++) {
             
+            //Int in Char Arrays umwandeln
             int len = strlen(randomchar[i]);
             //printf("%i\n",len);
             for (int n=0;n<len;n++){
@@ -71,18 +69,5 @@ int main(int argc, const char * argv[]) {
     }
     
     return 0;
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
     
 }
